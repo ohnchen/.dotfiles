@@ -14,7 +14,7 @@ floating_modifier $super
 exec --no-startup-id feh --bg-scale ~/.wallpaper.png
 
 # start a terminal
-bindsym $super+Return exec $terminal -e tmux a
+bindsym $super+Return exec $terminal -e tmux
 
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=10'"
