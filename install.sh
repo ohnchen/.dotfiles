@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # expects everything to be installed:
-# nvim, tmux, alacritty
+# nvim, tmux, alacritty, i3-package
 #
 #
 # clone nvim-fork repo into .dotfiles
