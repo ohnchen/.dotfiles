@@ -7,7 +7,12 @@ $ git clone git@github.com:ohnchen/.dotfiles.git
 ```
 ## Install Dependencies/Packages
 ```console
-$ sudo pacman -S i3 dmenu firefox alacritty neovim tmux feh git gcc net-tools alsa nmtui curl
+$ sudo pacman -S i3 dmenu firefox alacritty neovim tmux feh git gcc net-tools alsa-utils networkmanager curl xorg xorg-xinit openssh
+```
+
+Add to the end of the .xinitrc
+```
+exec i3
 ```
 ## Author
 
