@@ -25,3 +25,6 @@ fi
 
 ln -sf "$PWD"/tmux/tmux.conf "$HOME"/.tmux.conf
 
+# move wallpaper 
+ln -sf "$PWD"/wallpaper.png "$HOME"/.wallpaper.png
+
