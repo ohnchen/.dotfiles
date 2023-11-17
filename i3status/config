@@ -13,7 +13,7 @@ order += "cpu_temperature 0"
 order += "disk /"
 #order += "disk /home"
 #order += "ethernet enp1s0"
-#order += "wireless wlp2s0"
+order += "wireless wlan0"
 order += "volume master"
 order += "battery 1"
 order += "tztime local"
@@ -40,9 +40,9 @@ ethernet enp1s0 {
         format_down = "<span foreground='#88c0d0'> Disconnected </span>"
 }
 
-wireless wlp2s0 {
-        format_up = "<span foreground='#b48ead'> %essid </span>"
-        format_down = "<span foreground='#b48ead'> Disconnected </span>"
+wireless wlan0 {
+        format_up = "<span foreground='#b48ead'> %essid %ip </span>"
+        format_down = "<span foreground='#b48ead'> Disc </span>"
 }
 
 volume master {
