@@ -8,6 +8,14 @@
 git clone git@github.com:ohnchen/nvim-config.git "$HOME"/.config/nvim
 
 # i3 setup
+if [ ! -e "$HOME/.config/i3" ]; then
+  printf "WARNING: created directory i3"
+  mkdir "$HOME"/.config/i3
+fi
+if [ ! -e "$HOME/.config/i3" ]; then
+  printf "WARNING: created directory i3status"
+  mkdir "$HOME"/.config/i3status
+fi
 ln -sf "$PWD"/i3/config "$HOME"/.config/i3/config 
 ln -sf "$PWD"/i3status/config "$HOME"/.config/i3status/config 
 
