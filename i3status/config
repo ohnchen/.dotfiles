@@ -66,6 +66,6 @@ battery 1 {
 }
 
 tztime local {
-	format = "<span foreground='#81a1c1'> %d|%m|%y (%a) %H:%M:%S </span>"
+	format = "<span foreground='#81a1c1'> %d | %m | %y (%a) %H:%M:%S </span>"
 }
 
