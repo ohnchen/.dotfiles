@@ -12,7 +12,7 @@ if [ ! -e "$HOME/.config/i3" ]; then
   printf "WARNING: created directory i3"
   mkdir "$HOME"/.config/i3
 fi
-if [ ! -e "$HOME/.config/i3" ]; then
+if [ ! -e "$HOME/.config/i3status" ]; then
   printf "WARNING: created directory i3status"
   mkdir "$HOME"/.config/i3status
 fi
@@ -20,6 +20,10 @@ ln -sf "$PWD"/i3/config "$HOME"/.config/i3/config
 ln -sf "$PWD"/i3status/config "$HOME"/.config/i3status/config 
 
 # alacritty setup
+if [ ! -e "$HOME/.config/alacritty" ]; then
+  printf "WARNING: created directory alacritty"
+  mkdir "$HOME"/.config/alacritty
+fi
 ln -sf "$PWD"/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml 
 
 #tmux setup
@@ -35,4 +39,4 @@ ln -sf "$PWD"/tmux/tmux.conf "$HOME"/.tmux.conf
 ln -sf "$PWD"/wallpaper.png "$HOME"/.wallpaper.png
 
 # install rust 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
