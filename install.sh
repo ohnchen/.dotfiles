@@ -45,5 +45,8 @@ ln -sf "$PWD"/tmux/tmux.conf "$HOME"/.tmux.conf
 # move wallpaper 
 ln -sf "$PWD"/wallpaper.png "$HOME"/.wallpaper.png
 
+# set xinitrc
+ln -sf "$PWD"/.xinitrc "$HOME"/.xinitrc
+
 # install rust 
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
