@@ -1,12 +1,10 @@
 #!/bin/sh
-#
-# expects everything to be installed:
-# nvim, tmux, alacritty, i3-package
-#
+# install all these packages first
+# i3, dmenu, firefox, alacritty, nvim, tmux, 
+# feh, git, gcc, net-tools, alsamixer, nmtui
 #
 # clone nvim-fork repo into .dotfiles
 # does not need a link because it is its own repo
-
 git clone git@github.com:ohnchen/nvim-config.git "$HOME"/.config/nvim
 
 # i3 setup
@@ -28,3 +26,5 @@ ln -sf "$PWD"/tmux/tmux.conf "$HOME"/.tmux.conf
 # move wallpaper 
 ln -sf "$PWD"/wallpaper.png "$HOME"/.wallpaper.png
 
+# install rust 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

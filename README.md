@@ -5,6 +5,10 @@ My configuration files. Mostly copied from others and then refined for my needs.
 ```console
 $ git clone git@github.com:ohnchen/.dotfiles.git
 ```
+## Install Dependencies/Packages
+```console
+$ sudo pacman -S i3 dmenu firefox alacritty neovim tmux feh git gcc net-tools alsa nmtui curl
+```
 ## Author
 
 **Jona Ohme**
