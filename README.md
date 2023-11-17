@@ -7,7 +7,7 @@ $ git clone git@github.com:ohnchen/.dotfiles.git
 ```
 ## Install Dependencies/Packages
 ```console
-$ sudo pacman -S i3 dmenu firefox alacritty neovim tmux feh git gcc net-tools alsa-utils networkmanager curl xorg xorg-xinit openssh
+$ sudo pacman -S i3 dmenu firefox alacritty neovim tmux feh git gcc net-tools alsa-utils networkmanager curl xorg xorg-xinit openssh lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
 ```
 
 Add to the end of the .xinitrc
