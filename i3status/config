@@ -8,12 +8,10 @@ general {
 	color_bad = '#000000'
 }
 
-#order += "load"
 order += "cpu_usage"
 order += "cpu_temperature 0"
-order += "disk /"
-#order += "disk /home"
-#order += "ethernet enp1s0"
+order += "memory"
+order += "disk /home"
 order += "wireless wlan0"
 order += "volume master"
 order += "battery 1"
@@ -24,12 +22,16 @@ load {
 }
 
 cpu_usage {
-	format = "<span foreground='#ebcb8b'> %usage </span>"
+	format = "<span foreground='#ebcb8b'> cpu: %usage </span>"
 }
 
 cpu_temperature 0 {
         format = "<span foreground='#bf616a'> %degrees °C </span>"
         path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+memory {
+	format = "<span foreground='#ebcb8b'> mem: %used/%total </span>"
 }
 
 disk "/" {
@@ -46,7 +48,7 @@ ethernet enp1s0 {
 }
 
 wireless wlan0 {
-        format_up = "<span foreground='#b48ead'> %essid %ip </span>"
+        format_up = "<span foreground='#b48ead'> %essid [%quality] %ip </span>"
         format_down = "<span foreground='#b48ead'> Disc </span>"
 }
 
