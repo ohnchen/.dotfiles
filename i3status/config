@@ -9,6 +9,7 @@ general {
 }
 
 #order += "load"
+order += "cpu_usage"
 order += "cpu_temperature 0"
 order += "disk /"
 #order += "disk /home"
@@ -20,6 +21,10 @@ order += "tztime local"
 
 load {
         format = "<span foreground='#f59335'> %5min Load </span>"
+}
+
+cpu_usage {
+	format = "<span foreground='#ebcb8b'> %usage </span>"
 }
 
 cpu_temperature 0 {
