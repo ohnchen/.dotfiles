@@ -7,7 +7,7 @@ $ git clone git@github.com:ohnchen/.dotfiles.git
 ```
 ## Install Dependencies/Packages
 ```console
-$ sudo pacman -S i3 dmenu firefox kitty neovim tmux feh git gcc net-tools iwd alsa-utils networkmanager curl xorg xorg-xinit openssh thunar base-devel evince zsh 
+$ sudo pacman -S i3 dmenu firefox kitty neovim tmux feh git gcc net-tools iwd alsa-utils networkmanager curl xorg xorg-xinit openssh thunar base-devel evince zsh fish picom
 ```
 
 may need to locale-gen
