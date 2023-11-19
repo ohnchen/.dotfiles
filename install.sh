@@ -61,6 +61,9 @@ fi
 ln -sf $DIR/.xinitrc "$HOME"/.xinitrc
 ln -sf "$HOME"/.xinitrc "$HOME"/.xprofile # executed by lightdm
 
+# bashrc
+ln -sf $DIR/.bashrc "$HOME"/.bashrc
+
 # enable touchpad 
 sudo ln -sf $DIR/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
 
