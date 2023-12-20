@@ -4,7 +4,7 @@ set $super Mod4
 set $terminal alacritty
 
 # set font
-font pango: Noto Sans 12
+font pango: Noto Sans 10
 
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
@@ -27,7 +27,7 @@ bindsym $super+Delete exec i3lock -i ~/.screensaver.png
 bindsym $super+Shift+w exec firefox
 
 bindsym $super+Print exec ffplay /dev/video0 -x 640 -y 355 -vf hflip
-bindsym $super+Shift+f exec dolphin --platformtheme qt5ct 
+bindsym $super+Shift+f exec dolphin --platformtheme qt5ct -stylesheet ~/.config/qt5ct/qss/background.qss
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
