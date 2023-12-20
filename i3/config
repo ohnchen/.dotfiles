@@ -23,7 +23,7 @@ bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:si
 
 # common apps keybinds
 bindsym $super+Shift+Delete exec shutdown now 
-bindsym $super+Delete exec i3lock -i ~/.wallpaper.png
+bindsym $super+Delete exec i3lock -i ~/.screensaver.png
 bindsym $super+Shift+w exec firefox
 
 bindsym $super+Print exec ffplay /dev/video0 -x 640 -y 355

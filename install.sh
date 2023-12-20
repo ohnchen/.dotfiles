@@ -40,7 +40,7 @@ ln -sf $DIR/wallpaper/hexagons.png "$HOME"/.wallpaper.png
 feh --bg-scale "$HOME"/.wallpaper.png
 
 # set lightdm-stuff ( copying instead of linking because of lightdm not having access to this dir)
-cp $DIR/wallpaper.png /usr/share/pixmaps/wallpaper.png
+cp $DIR/screensaver.png /usr/share/pixmaps/wallpaper.png
 cp $DIR/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 if [ ! -e "/usr/share/themes/Dracula" ]; then
   wget https://github.com/dracula/gtk/archive/refs/heads/master.zip
