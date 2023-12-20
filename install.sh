@@ -26,14 +26,6 @@ if [ ! -e "$HOME/.config/alacritty" ]; then
 fi
 ln -sf $DIR/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml 
 
-# kitty setup
-if [ ! -e "$HOME/.config/kitty" ]; then
-  printf "WARNING: created directory kitty"
-  mkdir "$HOME"/.config/kitty
-fi
-ln -sf $DIR/kitty/kitty.conf "$HOME"/.config/kitty/kitty.conf 
-
-
 #tmux setup
 if [ ! -e "$HOME/.tmux/plugins/tpm" ]; then
   printf "WARNING: Cannot found TPM (Tmux Plugin Manager) \

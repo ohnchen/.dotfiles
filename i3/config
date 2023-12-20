@@ -1,11 +1,10 @@
-# set modifier
-set $super Mod4
+# set modifier set $super Mod4
 set $alt Mod1
-
+set $super Mod4
 set $terminal alacritty
 
 # set font
-font pango: Noto Sans 9
+font pango: Noto Sans 12
 
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
