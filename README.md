@@ -3,21 +3,16 @@ My configuration files. Mostly copied from others and then refined for my needs.
 
 ## Clone Repository
 ```console
-$ git clone git@github.com:ohnchen/.dotfiles.git
+$ git clone git@github.com:xrcrh/.dotfiles.git
 ```
 ## Install Dependencies/Packages
 ```console
-$ sudo pacman -S i3 dmenu firefox kitty neovim tmux feh git gcc net-tools iwd alsa-utils networkmanager curl xorg xorg-xinit openssh thunar base-devel evince zsh fish picom
+$ sudo pacman -S i3 dmenu firefox kitty neovim tmux feh git gcc net-tools iwd alsa-utils networkmanager curl xorg xorg-xinit openssh thunar base-devel evince zsh fish picom playerctl 
 ```
 
 for webcam-livefeed ffmpeg
 may need to locale-gen
 
-
-Add to the end of the .xinitrc
-```
-exec i3
-```
 ## Author
 
 **Jona Ohme**
