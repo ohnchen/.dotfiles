@@ -36,7 +36,7 @@ fi
 ln -sf $DIR/tmux/tmux.conf "$HOME"/.tmux.conf
 
 # move wallpaper and set lightdm-theme
-ln -sf $DIR/wallpaper.png "$HOME"/.wallpaper.png
+ln -sf $DIR/wallpaper/hexagons.png "$HOME"/.wallpaper.png
 feh --bg-scale "$HOME"/.wallpaper.png
 
 # set lightdm-stuff ( copying instead of linking because of lightdm not having access to this dir)
