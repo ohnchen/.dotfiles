@@ -5,7 +5,7 @@ DIR=$(realpath "$(dirname "{BASH_SOURCE[0]}")")
 # feh, git, gcc, net-tools, alsamixer, nmtui
 #
 # clone nvim-fork repo into .dotfiles
-git clone https://github.com/ohnchen/nvim-config.git "$HOME"/.config/nvim
+git clone https://github.com/rxcrh/nvim-config.git "$HOME"/.config/nvim
 
 # i3 setup
 if [ ! -e "$HOME/.config/i3" ]; then
@@ -41,13 +41,7 @@ feh --bg-scale "$HOME"/.wallpaper.png
 
 # set lightdm-stuff ( copying instead of linking because of lightdm not having access to this dir)
 cp $DIR/screensaver.png /usr/share/pixmaps/wallpaper.png
-cp $DIR/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
-if [ ! -e "/usr/share/themes/Dracula" ]; then
-  wget https://github.com/dracula/gtk/archive/refs/heads/master.zip
-  unzip $DIR/master.zip 
-  sudo mv gtk-master /usr/share/themes/Dracula
-  rm $DIR/master.zip
-fi
+cp $DIR/config.ini /etc/ly/confi.ini
 
 # set xinitrc
 ln -sf $DIR/.xinitrc "$HOME"/.xinitrc
